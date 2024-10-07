@@ -12,7 +12,7 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:VersionBuild="15"
-  DTS:VersionGUID="{5621111A-D4E5-4CD9-A741-2C332DE8CFC5}">
+  DTS:VersionGUID="{3D3A96F1-7A90-487A-8D7A-9A7D9576BD80}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,74 +38,6 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=BELIAL-PC;Initial Catalog=Dim_Albarran;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{874FB8F9-5200-4957-B0F3-FDAFBAA22000}BELIAL-PC.Dim_Albarran;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{C64E43B9-53F1-423C-BDF4-C19538C92BE0}"
-      DTS:ObjectName="SJAPCA03LC0318.Albarran">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{9B3EF06D-508D-42C0-9423-70F8428496C5}"
-      DTS:ObjectName="SJAPCA03LC0318.Albarran 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{F42A1FE3-4FD6-490E-AC6A-0DCFDDE2C57E}"
-      DTS:ObjectName="SJAPCA03LC0318.Albarran 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran1]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{0C35EA3D-BA23-427D-9AD8-8AD7D35FB5EE}"
-      DTS:ObjectName="SJAPCA03LC0318.Albarran1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Integrated Security=True;Application Name=SSIS-Package-{0C35EA3D-BA23-427D-9AD8-8AD7D35FB5EE}SJAPCA03LC0318.Albarran1;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{F45CDFE2-4A03-49EA-8464-DB9B76979214}"
-      DTS:ObjectName="SJAPCA03LC0318.Dim_Albarran">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Dim_Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran1]"
-      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{FFEC0543-1B4F-4BA9-A595-F3AC399B6645}"
-      DTS:ObjectName="SJAPCA03LC0318.Dim_Albarran1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Dim_Albarran;Integrated Security=True;Application Name=SSIS-Package-{FFEC0543-1B4F-4BA9-A595-F3AC399B6645}SJAPCA03LC0318.Dim_Albarran1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1630,8 +1562,8 @@
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\Insertar destino.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
-                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1721,8 +1653,8 @@
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\OLE DB Command.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
-                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1880,8 +1812,8 @@ FROM   comunas INNER JOIN
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\Origen Sucursal.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 2]"
+                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Albarran]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2024,8 +1956,8 @@ FROM   comunas INNER JOIN
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\Slowly Changing Dimension.Connections[LookupConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
-                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Dim_Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Dim_Albarran]"
                   description="Defines the connection to use for lookups in the dimension table"
                   name="LookupConnection" />
               </connections>
@@ -2149,14 +2081,14 @@ FROM   comunas INNER JOIN
           </components>
           <paths>
             <path
-              refId="Package\DIM SUCURSAL.Paths[Changing Attribute Updates Output]"
+              refId="Package\DIM SUCURSAL.Paths[Actualizar Existente]"
               endId="Package\DIM SUCURSAL\OLE DB Command.Inputs[OLE DB Command Input]"
-              name="Changing Attribute Updates Output"
+              name="Actualizar Existente"
               startId="Package\DIM SUCURSAL\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]" />
             <path
-              refId="Package\DIM SUCURSAL.Paths[New Output]"
+              refId="Package\DIM SUCURSAL.Paths[Crear Nuevo]"
               endId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input]"
-              name="New Output"
+              name="Crear Nuevo"
               startId="Package\DIM SUCURSAL\Slowly Changing Dimension.Outputs[New Output]" />
             <path
               refId="Package\DIM SUCURSAL.Paths[OLE DB Source Output]"
@@ -2181,7 +2113,7 @@ FROM   comunas INNER JOIN
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="152,42"
+          Size="161.142857142858,42.2857142857143"
           Id="Package\DIM SUCURSAL"
           TopLeft="41.1111103623739,66.1818145060344" />
         <NodeLayout
@@ -2197,24 +2129,16 @@ FROM   comunas INNER JOIN
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="215,42"
-          Id="Package\DIM SUCURSAL\Slowly Changing Dimension"
-          TopLeft="199.214285714286,107.785714285714" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\DIM SUCURSAL\OLE DB Command"
-          TopLeft="219.642857142857,210.071428571428" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\DIM SUCURSAL\Insertar destino"
-          TopLeft="5.50000000000003,210.071428571428" />
-        <NodeLayout
-          Size="157,42"
+          Size="157.142857142858,42.2857142857143"
           Id="Package\DIM SUCURSAL\Origen Sucursal"
           TopLeft="228.071428571429,5.49999999999997" />
+        <NodeLayout
+          Size="214.857142857143,42.2857142857143"
+          Id="Package\DIM SUCURSAL\Slowly Changing Dimension"
+          TopLeft="199.214285714286,107.785714285714" />
         <EdgeLayout
           Id="Package\DIM SUCURSAL.Paths[OLE DB Source Output]"
-          TopLeft="306.642857142857,47.7857142857142">
+          TopLeft="513.915584415584,155.058441558441">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2236,51 +2160,59 @@ FROM   comunas INNER JOIN
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="154.285714285715,42.2857142857143"
+          Id="Package\DIM SUCURSAL\Insertar destino"
+          TopLeft="5.50000000000003,210.071428571428" />
         <EdgeLayout
-          Id="Package\DIM SUCURSAL.Paths[New Output]"
-          TopLeft="272.166666666667,150.071428571428">
+          Id="Package\DIM SUCURSAL.Paths[Actualizar Existente]"
+          TopLeft="548.487012987013,257.058441558441">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-189.52380952381,59.9999999999999"
+              EndConnector="196.974025974025,60.1948051948046"
               Start="0,0"
-              End="-189.52380952381,52.4999999999999">
+              End="196.974025974025,52.6948051948046">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2661034846885" />
+                    End="0,20.3447134582866" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2661034846885"
-                    Point2="0,24.2661034846885"
-                    Point3="-4,24.2661034846885" />
+                    Point1="0,20.3447134582866"
+                    Point2="0,24.3447134582866"
+                    Point3="4,24.3447134582866" />
                   <mssgle:LineSegment
-                    End="-185.52380952381,24.2661034846885" />
+                    End="192.974025974025,24.3447134582866" />
                   <mssgle:CubicBezierSegment
-                    Point1="-185.52380952381,24.2661034846885"
-                    Point2="-189.52380952381,24.2661034846885"
-                    Point3="-189.52380952381,28.2661034846885" />
+                    Point1="192.974025974025,24.3447134582866"
+                    Point2="196.974025974025,24.3447134582866"
+                    Point3="196.974025974025,28.3447134582866" />
                   <mssgle:LineSegment
-                    End="-189.52380952381,52.4999999999999" />
+                    End="196.974025974025,52.6948051948046" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-121.853291480655,29.2661034846885,54.1827734375,11.43359375"
+              BoundingBox="54.6575989245127,29.3447134582866,87.658828125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="172,42.2857142857143"
+          Id="Package\DIM SUCURSAL\OLE DB Command"
+          TopLeft="220.642857142857,210.071428571428" />
         <EdgeLayout
           Id="Package\DIM SUCURSAL.Paths[Changing Attribute Updates Output]"
-          TopLeft="341.214285714286,149.785714285714">
+          TopLeft="341.119047619048,150.071428571428">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-35.571428571429,60.285714285714"
+              EndConnector="-34.4761904761904,59.9999999999999"
               Start="0,0"
-              End="-35.571428571429,52.785714285714">
+              End="-34.4761904761904,52.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2291,20 +2223,20 @@ FROM   comunas INNER JOIN
                     Point2="0,24.3814800158289"
                     Point3="-4,24.3814800158289" />
                   <mssgle:LineSegment
-                    End="-31.571428571429,24.3814800158289" />
+                    End="-30.4761904761904,24.2661034846885" />
                   <mssgle:CubicBezierSegment
-                    Point1="-31.571428571429,24.3814800158289"
-                    Point2="-35.571428571429,24.3814800158289"
-                    Point3="-35.571428571429,28.3814800158289" />
+                    Point1="-30.4761904761904,24.2661034846885"
+                    Point2="-34.4761904761904,24.2661034846885"
+                    Point3="-34.4761904761904,28.2661034846885" />
                   <mssgle:LineSegment
-                    End="-35.571428571429,52.785714285714" />
+                    End="-34.4761904761904,52.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-104.980753348215,29.3814800158289,174.390078125,16"
+              BoundingBox="-95.7720014880952,29.2661034846885,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2318,32 +2250,32 @@ FROM   comunas INNER JOIN
         <Name>SCDMetadata</Name>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{874FB8F9-5200-4957-B0F3-FDAFBAA22000}&lt;/ConnectionID&gt;
+&lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionID&gt;{A1683F2D-2E69-4558-8CB9-6E888BFCF6C1}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[DIMSUCURSAL]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Origen Sucursal.Salidas[OLE DB Source Output].Columnas[comuna]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;comuna&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Origen Sucursal.Outputs[OLE DB Source Output].Columns[sucursal]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Origen Sucursal.Salidas[OLE DB Source Output].Columnas[sucursal]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;sucursal&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Origen Sucursal.Outputs[OLE DB Source Output].Columns[sucursal_id]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Origen Sucursal.Salidas[OLE DB Source Output].Columnas[sucursal_id]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;sucursalId&lt;/ColumnName&gt;
       &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
       &lt;ChangeType&gt;None&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
   &lt;/InputToColumnsCollection&gt;
   &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insertar destino&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando de OLE DB&lt;/anyType&gt;
   &lt;/GeneratedComponentsIdentificationStrings&gt;
   &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
   &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
@@ -2357,260 +2289,6 @@ FROM   comunas INNER JOIN
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DIM SUCURSAL\Insertar destino">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DIM SUCURSAL\Origen Sucursal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\DIM EMPLEADOS">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="159,42"
-          Id="Package\DIM EMPLEADOS\LEER EMPLEADO"
-          TopLeft="114.5,98.5" />
-        <NodeLayout
-          Size="182,42"
-          Id="Package\DIM EMPLEADOS\LEER DIM EMPLEADO"
-          TopLeft="345.833333333333,98.3333333333333" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\DIM EMPLEADOS\Ordenar I"
-          TopLeft="129.166666666667,171.666666666667" />
-        <EdgeLayout
-          Id="Package\DIM EMPLEADOS.Paths[Salida de origen de OLE DB]"
-          TopLeft="192.833333333333,140.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,31.1666666666667"
-              Start="0,0"
-              End="0,23.6666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.6666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129,42"
-          Id="Package\DIM EMPLEADOS\Ordenar II"
-          TopLeft="366.666666666667,175" />
-        <EdgeLayout
-          Id="Package\DIM EMPLEADOS.Paths[Salida de origen de OLE DB1]"
-          TopLeft="434,140.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.6666666666666"
-              Start="0,0"
-              End="0,27.1666666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.1666666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\DIM EMPLEADOS\Combinación de mezcla"
-          TopLeft="240.833333333333,262.5" />
-        <EdgeLayout
-          Id="Package\DIM EMPLEADOS.Paths[Salida de ordenación]"
-          TopLeft="191.666666666667,213.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="144.166666666667,48.8333333333334"
-              Start="0,0"
-              End="144.166666666667,41.3333333333334">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.4166666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4166666666667"
-                    Point2="0,24.4166666666667"
-                    Point3="4,24.4166666666667" />
-                  <mssgle:LineSegment
-                    End="140.166666666667,24.4166666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="140.166666666667,24.4166666666667"
-                    Point2="144.166666666667,24.4166666666667"
-                    Point3="144.166666666667,28.4166666666667" />
-                  <mssgle:LineSegment
-                    End="144.166666666667,41.3333333333334" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DIM EMPLEADOS.Paths[Salida de ordenación1]"
-          TopLeft="431.166666666667,217">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-65.0000000000001,45.5000000000001"
-              Start="0,0"
-              End="-65.0000000000001,38.0000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.0720250521921" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.0720250521921"
-                    Point2="0,27.0720250521921"
-                    Point3="-4,27.0720250521921" />
-                  <mssgle:LineSegment
-                    End="-61.0000000000001,27.0720250521921" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-61.0000000000001,27.0720250521921"
-                    Point2="-65.0000000000001,27.0720250521921"
-                    Point3="-65.0000000000001,31.0720250521921" />
-                  <mssgle:LineSegment
-                    End="-65.0000000000001,38.0000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\DIM EMPLEADOS\División condicional"
-          TopLeft="245,350.833333333333" />
-        <EdgeLayout
-          Id="Package\DIM EMPLEADOS.Paths[Salida de combinación de mezcla]"
-          TopLeft="333.166666666667,304.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46.3333333333333"
-              Start="0,0"
-              End="0,38.8333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.8333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="227,42"
-          Id="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM"
-          TopLeft="221.666666666667,420" />
-        <EdgeLayout
-          Id="Package\DIM EMPLEADOS.Paths[Nuevo Registro]"
-          TopLeft="332.833333333333,392.833333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,27.1666666666667"
-              Start="0,0"
-              End="0,19.6666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.6666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-34.07703125,4.14095052083334,68.1540625,11.384765625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DIM EMPLEADOS\LEER EMPLEADO">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DIM EMPLEADOS\LEER DIM EMPLEADO">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
