@@ -7,12 +7,12 @@
   DTS:CreatorName="BELIAL-PC\oreln"
   DTS:DTSID="{E66C6890-AF6A-43A1-8DFD-78E9BF1A5760}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LastModifiedProductVersion="16.0.521.0"
   DTS:LocaleID="13322"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{9BC66761-9417-4315-A6B3-8CBB9AEBBD34}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{5621111A-D4E5-4CD9-A741-2C332DE8CFC5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,9 +40,1523 @@
           DTS:ConnectionString="Data Source=BELIAL-PC;Initial Catalog=Dim_Albarran;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{874FB8F9-5200-4957-B0F3-FDAFBAA22000}BELIAL-PC.Dim_Albarran;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C64E43B9-53F1-423C-BDF4-C19538C92BE0}"
+      DTS:ObjectName="SJAPCA03LC0318.Albarran">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9B3EF06D-508D-42C0-9423-70F8428496C5}"
+      DTS:ObjectName="SJAPCA03LC0318.Albarran 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F42A1FE3-4FD6-490E-AC6A-0DCFDDE2C57E}"
+      DTS:ObjectName="SJAPCA03LC0318.Albarran 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{0C35EA3D-BA23-427D-9AD8-8AD7D35FB5EE}"
+      DTS:ObjectName="SJAPCA03LC0318.Albarran1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Albarran;Integrated Security=True;Application Name=SSIS-Package-{0C35EA3D-BA23-427D-9AD8-8AD7D35FB5EE}SJAPCA03LC0318.Albarran1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F45CDFE2-4A03-49EA-8464-DB9B76979214}"
+      DTS:ObjectName="SJAPCA03LC0318.Dim_Albarran">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Dim_Albarran;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FFEC0543-1B4F-4BA9-A595-F3AC399B6645}"
+      DTS:ObjectName="SJAPCA03LC0318.Dim_Albarran1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SJAPCA03LC0318;Initial Catalog=Dim_Albarran;Integrated Security=True;Application Name=SSIS-Package-{FFEC0543-1B4F-4BA9-A595-F3AC399B6645}SJAPCA03LC0318.Dim_Albarran1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DIM EMPLEADOS"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{77386A36-550C-4ACF-81CD-E703C4EF4831}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DIM EMPLEADOS"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DIM EMPLEADOS\Combinación de mezcla"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Combinación de mezcla;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Combina dos flujos de datos ordenados en uno solo mediante la combinación FULL, LEFT o INNER. Se recomienda esta transformación cuando se pueden ordenar los flujos de datos en sus orígenes."
+              name="Combinación de mezcla"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el tipo de combinación que se debe realizar."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número de columnas de la clave de ordenación."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores NULL se tratan como valores iguales."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indica la cantidad máxima solicitada de búferes por entrada antes del bloqueo."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
+                  hasSideEffects="true"
+                  name="Entrada izquierda de combinación de mezcla">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[empleado_id]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[empleado_id]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="nombre"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[appaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="appaterno"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[appaterno]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[apmaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="apmaterno"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[apmaterno]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[fecha_contrato]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="fecha_contrato"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[fecha_contrato]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[sueldo_base]"
+                      cachedDataType="i4"
+                      cachedName="sueldo_base"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[sueldo_base]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[cargo_id]"
+                      cachedDataType="i4"
+                      cachedName="cargo_id"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[cargo_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
+                  hasSideEffects="true"
+                  name="Entrada derecha de combinación de mezcla">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla].Columns[empleado_id]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[empleado_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla]"
+                  isSorted="true"
+                  name="Salida de combinación de mezcla">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id]"
+                      name="empleado_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[empleado_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[nombre]"
+                      name="nombre">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[nombre]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[appaterno]"
+                      name="appaterno">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[appaterno]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[apmaterno]"
+                      name="apmaterno">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[apmaterno]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[fecha_contrato]"
+                      name="fecha_contrato">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[fecha_contrato]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[sueldo_base]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[sueldo_base]"
+                      name="sueldo_base">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[sueldo_base]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cargo_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cargo_id]"
+                      name="cargo_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[cargo_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id (1)]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id (1)]"
+                      name="empleado_id (1)">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="La columna de entrada asociada a esta columna de salida"
+                          name="InputColumnID">#{Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla].Columns[empleado_id]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DIM EMPLEADOS\División condicional"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="División condicional;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Enruta filas de datos a diferentes salidas según el contenido de los datos. Se usan condiciones (expresiones de SSIS) para especificar las filas que se van a enrutar. Por ejemplo, se usa para separar los registros que deben limpiarse de los registros listos para ser cargados o para enrutar solamente un subconjunto de registros."
+              name="División condicional"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DIM EMPLEADOS\División condicional.Inputs[Entrada de división condicional]"
+                  description="Entrada en la transformación División condicional"
+                  name="Entrada de división condicional">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\División condicional.Inputs[Entrada de división condicional].Columns[empleado_id (1)]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id (1)"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id (1)]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\División condicional.Outputs[Nuevo Registro]"
+                  description="Salida 1 de la transformación División condicional"
+                  errorOrTruncationOperation="Cálculo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Nuevo Registro"
+                  synchronousInputId="Package\DIM EMPLEADOS\División condicional.Inputs[Entrada de división condicional]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
+                      name="Expression">[ISNULL](#{Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id (1)]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL([empleado_id (1)])</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DIM EMPLEADOS\División condicional.Outputs[Salida predeterminada de división condicional]"
+                  description="Salida predeterminada de la transformación División condicional"
+                  exclusionGroup="1"
+                  name="Salida predeterminada de división condicional"
+                  synchronousInputId="Package\DIM EMPLEADOS\División condicional.Inputs[Entrada de división condicional]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DIM EMPLEADOS\División condicional.Outputs[Salida de error de división condicional]"
+                  description="Salida de error de la transformación División condicional"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de división condicional"
+                  synchronousInputId="Package\DIM EMPLEADOS\División condicional.Inputs[Entrada de división condicional]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Ingresar nuevo empleados DIM"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."empleados"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran1]"
+                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran1]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[empleado_id]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[empleado_id]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[empleado_id]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="nombre"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[nombre]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[appaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="appaterno"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[appaterno]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[apmaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="apmaterno"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[apmaterno]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[apmaterno]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[fecha_contrato]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="fecha_contrato"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_contrato]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[fecha_contrato]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[sueldo_base]"
+                      cachedDataType="i4"
+                      cachedName="sueldo_base"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[sueldo_base]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[sueldo_base]" />
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].Columns[cargo_id]"
+                      cachedDataType="i4"
+                      cachedName="cargo_id"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[cargo_id]"
+                      lineageId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[cargo_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[empleado_id]"
+                      dataType="i4"
+                      name="empleado_id" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      name="appaterno" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      name="apmaterno" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      name="fecha_contrato" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[sueldo_base]"
+                      dataType="i4"
+                      name="sueldo_base" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET].ExternalColumns[cargo_id]"
+                      dataType="i4"
+                      name="cargo_id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="LEER DIM EMPLEADO"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[empleados]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[empleado_id]"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]"
+                      name="empleado_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[nombre]"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[appaterno]"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]"
+                      name="appaterno"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[apmaterno]"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]"
+                      name="apmaterno"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[fecha_contrato]"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]"
+                      name="fecha_contrato"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[sueldo_base]"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]"
+                      name="sueldo_base"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[cargo_id]"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]"
+                      name="cargo_id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[empleado_id]"
+                      dataType="i4"
+                      name="empleado_id" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      name="appaterno" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      name="apmaterno" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      name="fecha_contrato" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[sueldo_base]"
+                      dataType="i4"
+                      name="sueldo_base" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[cargo_id]"
+                      dataType="i4"
+                      name="cargo_id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[empleado_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[empleado_id]"
+                      name="empleado_id" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[nombre]"
+                      name="nombre" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[appaterno]"
+                      name="appaterno" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[apmaterno]"
+                      name="apmaterno" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[fecha_contrato]"
+                      name="fecha_contrato" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[sueldo_base]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[sueldo_base]"
+                      name="sueldo_base" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[cargo_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[cargo_id]"
+                      name="cargo_id" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DIM EMPLEADOS\LEER EMPLEADO"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="LEER EMPLEADO"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[empleados]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[empleado_id]"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]"
+                      name="empleado_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[nombre]"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[appaterno]"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]"
+                      name="appaterno"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[apmaterno]"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]"
+                      name="apmaterno"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[fecha_contrato]"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]"
+                      name="fecha_contrato"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[sueldo_base]"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]"
+                      name="sueldo_base"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[cargo_id]"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]"
+                      name="cargo_id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[empleado_id]"
+                      dataType="i4"
+                      name="empleado_id" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      name="appaterno" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      name="apmaterno" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      name="fecha_contrato" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[sueldo_base]"
+                      dataType="i4"
+                      name="sueldo_base" />
+                    <externalMetadataColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].ExternalColumns[cargo_id]"
+                      dataType="i4"
+                      name="cargo_id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[empleado_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[empleado_id]"
+                      name="empleado_id" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[nombre]"
+                      name="nombre" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[appaterno]"
+                      name="appaterno" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[apmaterno]"
+                      name="apmaterno" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[fecha_contrato]"
+                      name="fecha_contrato" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[sueldo_base]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[sueldo_base]"
+                      name="sueldo_base" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[cargo_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[cargo_id]"
+                      name="cargo_id" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DIM EMPLEADOS\Ordenar I"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+              name="Ordenar I"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación]"
+                  name="Entrada de ordenación">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[empleado_id]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="nombre"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[appaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="appaterno"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[apmaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="apmaterno"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[fecha_contrato]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="fecha_contrato"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[sueldo_base]"
+                      cachedDataType="i4"
+                      cachedName="sueldo_base"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación].Columns[cargo_id]"
+                      cachedDataType="i4"
+                      cachedName="cargo_id"
+                      lineageId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación]"
+                  isSorted="true"
+                  name="Salida de ordenación">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[empleado_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[empleado_id]"
+                      name="empleado_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[nombre]"
+                      name="nombre">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[appaterno]"
+                      name="appaterno">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[apmaterno]"
+                      name="apmaterno">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[fecha_contrato]"
+                      name="fecha_contrato">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[sueldo_base]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[sueldo_base]"
+                      name="sueldo_base">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[cargo_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación].Columns[cargo_id]"
+                      name="cargo_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DIM EMPLEADOS\Ordenar II"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+              name="Ordenar II"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación]"
+                  name="Entrada de ordenación">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[empleado_id]"
+                      cachedDataType="i4"
+                      cachedName="empleado_id"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="nombre"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[appaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="appaterno"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[apmaterno]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="apmaterno"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[fecha_contrato]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="fecha_contrato"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[sueldo_base]"
+                      cachedDataType="i4"
+                      cachedName="sueldo_base"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación].Columns[cargo_id]"
+                      cachedDataType="i4"
+                      cachedName="cargo_id"
+                      lineageId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación]"
+                  isSorted="true"
+                  name="Salida de ordenación">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[empleado_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[empleado_id]"
+                      name="empleado_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[empleado_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[nombre]"
+                      name="nombre">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[nombre]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[appaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[appaterno]"
+                      name="appaterno">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[appaterno]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[apmaterno]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[apmaterno]"
+                      name="apmaterno">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[apmaterno]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[fecha_contrato]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[fecha_contrato]"
+                      name="fecha_contrato">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[fecha_contrato]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[sueldo_base]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[sueldo_base]"
+                      name="sueldo_base">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[sueldo_base]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[cargo_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación].Columns[cargo_id]"
+                      name="cargo_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB].Columns[cargo_id]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DIM EMPLEADOS.Paths[Nuevo Registro]"
+              endId="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM.Inputs[Entrada de destino de ADO NET]"
+              name="Nuevo Registro"
+              startId="Package\DIM EMPLEADOS\División condicional.Outputs[Nuevo Registro]" />
+            <path
+              refId="Package\DIM EMPLEADOS.Paths[Salida de combinación de mezcla]"
+              endId="Package\DIM EMPLEADOS\División condicional.Inputs[Entrada de división condicional]"
+              name="Salida de combinación de mezcla"
+              startId="Package\DIM EMPLEADOS\Combinación de mezcla.Outputs[Salida de combinación de mezcla]" />
+            <path
+              refId="Package\DIM EMPLEADOS.Paths[Salida de ordenación]"
+              endId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\DIM EMPLEADOS\Ordenar I.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\DIM EMPLEADOS.Paths[Salida de ordenación1]"
+              endId="Package\DIM EMPLEADOS\Combinación de mezcla.Inputs[Entrada derecha de combinación de mezcla]"
+              name="Salida de ordenación"
+              startId="Package\DIM EMPLEADOS\Ordenar II.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\DIM EMPLEADOS.Paths[Salida de origen de OLE DB]"
+              endId="Package\DIM EMPLEADOS\Ordenar I.Inputs[Entrada de ordenación]"
+              name="Salida de origen de OLE DB"
+              startId="Package\DIM EMPLEADOS\LEER EMPLEADO.Outputs[Salida de origen de OLE DB]" />
+            <path
+              refId="Package\DIM EMPLEADOS.Paths[Salida de origen de OLE DB1]"
+              endId="Package\DIM EMPLEADOS\Ordenar II.Inputs[Entrada de ordenación]"
+              name="Salida de origen de OLE DB"
+              startId="Package\DIM EMPLEADOS\LEER DIM EMPLEADO.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\DIM SUCURSAL"
       DTS:CreationName="Microsoft.Pipeline"
@@ -73,7 +1587,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[DIMSUCURSAL]</property>
+                  name="OpenRowset">[dbo].[sucursales]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -116,8 +1630,8 @@
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\Insertar destino.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
-                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
+                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -130,42 +1644,28 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].Columns[sucursal_id]"
-                      cachedDataType="i4"
-                      cachedName="sucursal_id"
-                      externalMetadataColumnId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[sucursalId]"
-                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[sucursal_id]" />
-                    <inputColumn
                       refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].Columns[sucursal]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="sucursal"
                       externalMetadataColumnId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[sucursal]"
                       lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[sucursal]" />
-                    <inputColumn
-                      refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].Columns[comuna]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="comuna"
-                      externalMetadataColumnId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[comuna]"
-                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[sucursalId]"
-                      dataType="i4"
-                      name="sucursalId" />
                     <externalMetadataColumn
                       refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[sucursal]"
                       dataType="wstr"
                       length="255"
                       name="sucursal" />
                     <externalMetadataColumn
-                      refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[comuna]"
-                      dataType="wstr"
-                      length="255"
-                      name="comuna" />
+                      refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[sucursal_id]"
+                      dataType="i4"
+                      name="sucursal_id" />
+                    <externalMetadataColumn
+                      refId="Package\DIM SUCURSAL\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[comuna_id]"
+                      dataType="i4"
+                      name="comuna_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -221,8 +1721,8 @@
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\OLE DB Command.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
-                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Dim_Albarran]"
+                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
+                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Dim_Albarran]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -240,7 +1740,7 @@
                       cachedLength="255"
                       cachedName="comuna"
                       externalMetadataColumnId="Package\DIM SUCURSAL\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna]" />
+                      lineageId="Package\DIM SUCURSAL\56:invalid" />
                     <inputColumn
                       refId="Package\DIM SUCURSAL\OLE DB Command.Inputs[OLE DB Command Input].Columns[sucursal]"
                       cachedDataType="wstr"
@@ -343,7 +1843,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[dbo].[sucursales]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -371,7 +1871,7 @@ FROM   comunas INNER JOIN
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">2</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -380,8 +1880,8 @@ FROM   comunas INNER JOIN
               <connections>
                 <connection
                   refId="Package\DIM SUCURSAL\Origen Sucursal.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BELIAL-PC.Albarran]"
-                  connectionManagerRefId="Package.ConnectionManagers[BELIAL-PC.Albarran]"
+                  connectionManagerID="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[SJAPCA03LC0318.Albarran 2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -390,16 +1890,6 @@ FROM   comunas INNER JOIN
                   refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].ExternalColumns[comuna]"
-                      length="255"
-                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna]"
-                      name="comuna"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[sucursal]"
                       dataType="wstr"
@@ -419,14 +1909,18 @@ FROM   comunas INNER JOIN
                       lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[sucursal_id]"
                       name="sucursal_id"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].ExternalColumns[comuna_id]"
+                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna_id]"
+                      name="comuna_id"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].ExternalColumns[comuna]"
-                      dataType="wstr"
-                      length="255"
-                      name="comuna" />
                     <externalMetadataColumn
                       refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].ExternalColumns[sucursal]"
                       dataType="wstr"
@@ -436,6 +1930,10 @@ FROM   comunas INNER JOIN
                       refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].ExternalColumns[sucursal_id]"
                       dataType="i4"
                       name="sucursal_id" />
+                    <externalMetadataColumn
+                      refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].ExternalColumns[comuna_id]"
+                      dataType="i4"
+                      name="comuna_id" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -443,12 +1941,6 @@ FROM   comunas INNER JOIN
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[comuna]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[comuna]"
-                      name="comuna" />
                     <outputColumn
                       refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[sucursal]"
                       dataType="wstr"
@@ -460,6 +1952,11 @@ FROM   comunas INNER JOIN
                       dataType="i4"
                       lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[sucursal_id]"
                       name="sucursal_id" />
+                    <outputColumn
+                      refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[comuna_id]"
+                      dataType="i4"
+                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[comuna_id]"
+                      name="comuna_id" />
                     <outputColumn
                       refId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -543,7 +2040,7 @@ FROM   comunas INNER JOIN
                       cachedLength="255"
                       cachedName="comuna"
                       externalMetadataColumnId="Package\DIM SUCURSAL\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[comuna]"
-                      lineageId="Package\DIM SUCURSAL\Origen Sucursal.Outputs[OLE DB Source Output].Columns[comuna]">
+                      lineageId="Package\DIM SUCURSAL\56:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -672,21 +2169,25 @@ FROM   comunas INNER JOIN
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
-<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
-<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="161.142857142858,42.2857142857143"
+          Size="152,42"
           Id="Package\DIM SUCURSAL"
           TopLeft="41.1111103623739,66.1818145060344" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\DIM EMPLEADOS"
+          TopLeft="301,67" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -696,13 +2197,21 @@ FROM   comunas INNER JOIN
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157.142857142858,42.2857142857143"
-          Id="Package\DIM SUCURSAL\Origen Sucursal"
-          TopLeft="228.071428571429,5.49999999999997" />
-        <NodeLayout
-          Size="214.857142857143,42.2857142857143"
+          Size="215,42"
           Id="Package\DIM SUCURSAL\Slowly Changing Dimension"
           TopLeft="199.214285714286,107.785714285714" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\DIM SUCURSAL\OLE DB Command"
+          TopLeft="219.642857142857,210.071428571428" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\DIM SUCURSAL\Insertar destino"
+          TopLeft="5.50000000000003,210.071428571428" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\DIM SUCURSAL\Origen Sucursal"
+          TopLeft="228.071428571429,5.49999999999997" />
         <EdgeLayout
           Id="Package\DIM SUCURSAL.Paths[OLE DB Source Output]"
           TopLeft="306.642857142857,47.7857142857142">
@@ -722,13 +2231,11 @@ FROM   comunas INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-8,18.25,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="154.285714285715,42.2857142857143"
-          Id="Package\DIM SUCURSAL\Insertar destino"
-          TopLeft="5.50000000000003,210.071428571428" />
         <EdgeLayout
           Id="Package\DIM SUCURSAL.Paths[New Output]"
           TopLeft="272.166666666667,150.071428571428">
@@ -765,57 +2272,45 @@ FROM   comunas INNER JOIN
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42.2857142857143"
-          Id="Package\DIM SUCURSAL\OLE DB Command"
-          TopLeft="220.642857142857,210.071428571428" />
         <EdgeLayout
           Id="Package\DIM SUCURSAL.Paths[Changing Attribute Updates Output]"
-          TopLeft="341.119047619048,150.071428571428">
+          TopLeft="341.214285714286,149.785714285714">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-34.4761904761904,59.9999999999999"
+              EndConnector="-35.571428571429,60.285714285714"
               Start="0,0"
-              End="-34.4761904761904,52.4999999999999">
+              End="-35.571428571429,52.785714285714">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2661034846885" />
+                    End="0,20.3814800158289" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2661034846885"
-                    Point2="0,24.2661034846885"
-                    Point3="-4,24.2661034846885" />
+                    Point1="0,20.3814800158289"
+                    Point2="0,24.3814800158289"
+                    Point3="-4,24.3814800158289" />
                   <mssgle:LineSegment
-                    End="-30.4761904761904,24.2661034846885" />
+                    End="-31.571428571429,24.3814800158289" />
                   <mssgle:CubicBezierSegment
-                    Point1="-30.4761904761904,24.2661034846885"
-                    Point2="-34.4761904761904,24.2661034846885"
-                    Point3="-34.4761904761904,28.2661034846885" />
+                    Point1="-31.571428571429,24.3814800158289"
+                    Point2="-35.571428571429,24.3814800158289"
+                    Point3="-35.571428571429,28.3814800158289" />
                   <mssgle:LineSegment
-                    End="-34.4761904761904,52.4999999999999" />
+                    End="-35.571428571429,52.785714285714" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-95.7720014880952,29.2661034846885,157.0678125,11.6630859375"
+              BoundingBox="-104.980753348215,29.3814800158289,174.390078125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DIM SUCURSAL\Origen Sucursal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DIM SUCURSAL\Slowly Changing Dimension">
     <Properties>
@@ -862,6 +2357,260 @@ FROM   comunas INNER JOIN
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DIM SUCURSAL\Insertar destino">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DIM SUCURSAL\Origen Sucursal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\DIM EMPLEADOS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\DIM EMPLEADOS\LEER EMPLEADO"
+          TopLeft="114.5,98.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\DIM EMPLEADOS\LEER DIM EMPLEADO"
+          TopLeft="345.833333333333,98.3333333333333" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\DIM EMPLEADOS\Ordenar I"
+          TopLeft="129.166666666667,171.666666666667" />
+        <EdgeLayout
+          Id="Package\DIM EMPLEADOS.Paths[Salida de origen de OLE DB]"
+          TopLeft="192.833333333333,140.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.1666666666667"
+              Start="0,0"
+              End="0,23.6666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.6666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="129,42"
+          Id="Package\DIM EMPLEADOS\Ordenar II"
+          TopLeft="366.666666666667,175" />
+        <EdgeLayout
+          Id="Package\DIM EMPLEADOS.Paths[Salida de origen de OLE DB1]"
+          TopLeft="434,140.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.6666666666666"
+              Start="0,0"
+              End="0,27.1666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.1666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="190,42"
+          Id="Package\DIM EMPLEADOS\Combinación de mezcla"
+          TopLeft="240.833333333333,262.5" />
+        <EdgeLayout
+          Id="Package\DIM EMPLEADOS.Paths[Salida de ordenación]"
+          TopLeft="191.666666666667,213.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.166666666667,48.8333333333334"
+              Start="0,0"
+              End="144.166666666667,41.3333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4166666666667"
+                    Point2="0,24.4166666666667"
+                    Point3="4,24.4166666666667" />
+                  <mssgle:LineSegment
+                    End="140.166666666667,24.4166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="140.166666666667,24.4166666666667"
+                    Point2="144.166666666667,24.4166666666667"
+                    Point3="144.166666666667,28.4166666666667" />
+                  <mssgle:LineSegment
+                    End="144.166666666667,41.3333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DIM EMPLEADOS.Paths[Salida de ordenación1]"
+          TopLeft="431.166666666667,217">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-65.0000000000001,45.5000000000001"
+              Start="0,0"
+              End="-65.0000000000001,38.0000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.0720250521921" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.0720250521921"
+                    Point2="0,27.0720250521921"
+                    Point3="-4,27.0720250521921" />
+                  <mssgle:LineSegment
+                    End="-61.0000000000001,27.0720250521921" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-61.0000000000001,27.0720250521921"
+                    Point2="-65.0000000000001,27.0720250521921"
+                    Point3="-65.0000000000001,31.0720250521921" />
+                  <mssgle:LineSegment
+                    End="-65.0000000000001,38.0000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\DIM EMPLEADOS\División condicional"
+          TopLeft="245,350.833333333333" />
+        <EdgeLayout
+          Id="Package\DIM EMPLEADOS.Paths[Salida de combinación de mezcla]"
+          TopLeft="333.166666666667,304.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.3333333333333"
+              Start="0,0"
+              End="0,38.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="227,42"
+          Id="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM"
+          TopLeft="221.666666666667,420" />
+        <EdgeLayout
+          Id="Package\DIM EMPLEADOS.Paths[Nuevo Registro]"
+          TopLeft="332.833333333333,392.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.1666666666667"
+              Start="0,0"
+              End="0,19.6666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.6666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34.07703125,4.14095052083334,68.1540625,11.384765625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DIM EMPLEADOS\LEER EMPLEADO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DIM EMPLEADOS\LEER DIM EMPLEADO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DIM EMPLEADOS\Ingresar nuevo empleados DIM">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
